@@ -1,0 +1,29 @@
+@import '~@angular/material/core/theming/all-theme';
+@import '~@angular/material/core/theming/prebuilt/deeppurple-amber.scss';
+
+.typeahead-container {
+  //display: inline;
+  width: 30%;
+  position: relative;
+
+  .typeahead-options {
+    background-color: md-color($md-deep-purple, 100, .75);
+    width: 250px;
+    position: absolute;
+  }
+
+  .dropdown-option {
+    margin: 0px;
+    padding: 10px 5px 10px 5px;
+    cursor: pointer;
+  }
+
+  .dropdown-option:hover {
+    background-color: md-color($accent, 500);
+  }
+}
+
+
+
+
+

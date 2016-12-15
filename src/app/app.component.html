@@ -1,3 +1,9 @@
-<h1>
-  {{title}}
-</h1>
+<h1>Typeahead example</h1>
+
+<jd-md-typeahead
+  [options]="options"
+  [placeholder]="placeHolder"
+  (value)="handleSelections($event)"
+></jd-md-typeahead>
+
+<p><label>You Selected: </label>{{selectedName}}</p>

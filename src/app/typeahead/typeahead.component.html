@@ -1,0 +1,27 @@
+<div>
+  <div class="typeahead-container">
+    <div class="typeahead-input">
+      <md-input
+        (focus)="selectionStarted()"
+        (keyup)="valueChange()"
+        (blur)="selectionEnded()"
+        [(ngModel)]="userValue"
+        [placeholder]="placeholder"
+        #suiteInput
+      >
+      </md-input>
+    </div>
+    <div class="typeahead-options"
+         *ngIf="showOptions">
+      <div (click)="selectOption(option)"
+           class="dropdown-option"
+           *ngFor="let option of displayOptions"
+      >
+        <div>{{option.name}}</div>
+        <div>
+          <small>{{option.description}}</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
