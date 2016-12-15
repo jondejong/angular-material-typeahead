@@ -1,6 +1,6 @@
 {
   "name": "angular-material-typeahead",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Example of a typeahead select in Angular 2 built off of Material 2",
   "dependencies": {
     "@angular/common": "2.2.3",
